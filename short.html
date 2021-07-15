@@ -1,113 +1,249 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Short Term Investment</title>
-  </head>
-  <body>
-    <nav>
-        <img src="images/logo.png" alt="" />
-        <ul class="navigation">
-          <div class="align">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="short.html">Short Term</a></li>
-            <li><a href="long.html">Long Term</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Short Term Investment</title>
+</head>
+
+<body>
+  <nav>
+    <img src="images/logo.png" alt="" />
+    <ul class="navigation">
+      <div class="align">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="short.html">Short Term</a></li>
+        <li><a href="long.html">Long Term</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+    </ul>
+    <button class="btn1" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Log In
+    </button>
+    <div class="modal" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Log in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </ul>
-        <button class="btn1" data-bs-toggle="modal" data-bs-target="#loginModal">
-          Log In
-        </button>
-        <div class="modal" id="loginModal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Log in</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
               </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                  </div>
-                  <div id="emailHelp" class="form-text " data-bs-toggle="modal" data-bs-target="#signupModal">
-                    <a href="#"> Already have an account ?</a>
-                  </div>
-                </form>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  Close
-                </button>
-                <button type="button" class="btn btn-success">
-                  Log In
-                </button>
+              <div id="emailHelp" class="form-text " data-bs-toggle="modal" data-bs-target="#signupModal">
+                <a href="#"> Don't have an account ?</a>
               </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-success">
+              Log In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/img3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-flex justify-content-center text-center">
+          <h1>Short Term Investment</h1>
+        </div>
+      </div>
+      <div class="information">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h2 class="display-6 fw-bold lh-1">What Are Short-Term Investments? </h2>
+            <p class="lead my-4">Short term investments are designed to provide considerable returns in a fairly short
+              span of time which can be a year or even a few months. These plans are more focused to meet the expected
+              near future expenses.
+              <br>
+
+              Usually, investors who are more inclined towards short-term investments option aren’t really interested in
+              waiting for years in order to get their money multiplied many times over. Instead, they look for quick and
+              effective results. This is where short term investment plans come to their rescue.
+              <br>
+
+              With short term investment plans, one can expect optimum returns to meet their financial objectives, but
+              not massive results as in the case of long-term investments options . . Owing to the lower risks
+              associated with short term investment plans, they often rank high on the popularity charts of seasoned
+              investors.
+            </p>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded" src="images/st5.jpeg" alt="" width="460" height="460">
+          </div>
+          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded" src="images/st6.jpeg" alt="" width="460" height="460">
+            </div>
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+
+              <h2 class="display-6 fw-bold lh-1">Working And Requirements Of Short-Term Investments </h2>
+              <p class="lead my-4">The companies which have a strong cash flow have short-term investments accounts on
+                their balance sheet. This is because; the companies with strong cash position can afford to invest
+                surplus cash in bonds, stocks or other investment securities like treasury bills, etc. in order to earn
+                higher interest similarly as a savings account. The major objective of short-term investment plans for
+                both investors and companies is to have capital protection while generating good returns on investment.
+                <br>
+                Any investment is called a short-term investment if it fulfills the two basic requirements. Firstly, it
+                provides liquidity. Secondly, the investment should be made for a short-term period of 12 months. A bond
+                which matures within a specific time frame is also classified as a short-term investment plan. The
+                marketable equity securities are considered as a short-term investment and can be easily traded as a
+                liquid fund. Short-term investment plans have specified maturity date which is less than one year.
+              </p>
             </div>
           </div>
         </div>
-        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create a new account</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="onemore my-5">
+          <h1 class="abc d-flex justify-content-center">Top 3 short-term investments in July 2021</h1>
+          <div class="container marketing">
+            <div class="row my-5">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/st2.jpeg">
+                <h2>1. Recurring deposit</h2>
+                <p> A Recurring Deposit, commonly known as RD, is a unique term-deposit that is offered by Indian Banks.
+                  It is an investment tool which allows people to make regular deposits and earn decent returns on the
+                  investment. Due to the regular deposit factor and an interest component, it often provides flexibility
+                  and ease of investments to users/individuals.
+                  <br>
+                  However, it is essential to know that RDs are different from Fixed Deposits/FDs . RDs are flexible in
+                  most aspects. An RD account holder can choose to invest a fixed amount each month while earning decent
+                  interest on the amount. RDs are an ideal saving-cum-investment instrument.
+                  <br>
+                  Most major banks in India offer Recurring Deposit Accounts, with a term that often ranges between 6
+                  months to 10 years, also providing individuals with the opportunity to choose a term according to
+                  their needs. However, the interest rate, once determined, does not change during the tenure; and on
+                  maturity, the individual will be paid a lumpsum amount which includes the regular investments as well
+                  as the interest earned.
+                  <br>
+                  A recurring deposit is a special kind of term deposit offered by banks which help people with regular
+                  incomes to deposit a fixed amount every month into their recurring deposit account and earn interest
+                  at the rate applicable to fixed deposits.
+                </p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/st3.jpeg">
+
+                <h2>2. Money market account</h2>
+                <p>A money market account is an interest-bearing account at a bank or credit union—not to be confused
+                  with a money market mutual fund. Sometimes referred to as money market deposit accounts (MMDA), money
+                  market accounts (MMA) have some features not found in other types of accounts. Most money market
+                  accounts pay a higher interest rate than regular passbook savings accounts and often include
+                  checkwriting and debit card privileges. They also come with restrictions that make them less flexible
+                  than a regular checking account. They are important for calculating tangible net worth.
+                  <br>
+                  Money market accounts are offered at traditional and online banks and at credit unions. They have both
+                  advantages and disadvantages compared with other types of accounts. Their advantages include higher
+                  interest rates, insurance protection, and check writing and debit card privileges. Banks and credit
+                  unions generally require customers to deposit a certain amount of money to open an account and to keep
+                  their account balance above a certain level. Many will impose monthly fees if the balance falls below
+                  the minimum.
+                  <br>
+                  Money market deposit accounts also provide federal insurance protection. Money market mutual funds
+                  generally do not. Money market accounts at a bank are insured by the Federal Deposit Insurance
+                  Corporation (FDIC), an independent agency of the federal government.
+                </p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/st4.jpeg">
+
+                <h2>3. Large cap mutual funds</h2>
+                <p>
+                  Market capitalizations of companies are primarily classified into three types; that of large-cap
+                  funds, mid-cap funds and small-cap funds based on their assets and market evaluation. Any mutual fund
+                  investing their investible corpus primarily in companies with significant market capitalization falls
+                  under the category of large-cap mutual funds.
+                  <br>
+                  A large-cap company typically has strong corporate practices and has been in the market for a long
+                  time, and hence some of the best performing large cap mutual funds, have generated steady returns for
+                  its investors.
+                  <br>
+                  The returns are usually moderate, but steady. A salient feature defining large-cap companies is that
+                  they have a market capitalisation of more than Rs. 20,000 Crore. Another aspect of defining a large
+                  cap company is that it must be ranked in the top 100 entities in its segment.
+                  <br>
+                  It is important to note that large-cap companies and subsequently mutual funds lie low on the risk
+                  spectrum.
+                  <br>
+                  All mutual funds have a singular objective of wealth generation through capital investment. The best
+                  large-cap mutual funds are exceptionally reliable in this regard considering that they have been
+                  investing their corpus in the market of funding and investment for an extended period; thereby having
+                  a strong track record of generating profits.
+                </p>
               </div>
-              <div class="modal-body">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">
-                      We'll never share your email with anyone else.
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Sign Up
-                </button>
-              </div>
-            </div>
+            </div>  
           </div>
         </div>
-      </nav>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/img3.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-flex justify-content-center text-center">
-                <h1>Short Term Investment</h1>
-              </div>
-          </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+        <footer _ngcontent-serverapp-c52="" class="kontainer-fluid bg-dark my-0 py-3 text-light">
+          <p _ngcontent-serverapp-c52="" class="mb-0 text-left">Funds Master Copyright © 2021-2022</p>
+          <p>Mail us at : &nbsp;<a class="email mb-0 text-right"
+              href="mailto:fundsmaster@gmail.com">fundsmaster@gmail.com</a></p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>
