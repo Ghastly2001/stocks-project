@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Long Term Investment</title>
+  </head>
+  <body>
+    <nav>
+        <img src="images/logo.png" alt="" />
+        <ul class="navigation">
+          <div class="align">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="short.html">Short Term</a></li>
+            <li><a href="long.html">Long Term</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </ul>
+        <button class="btn1" data-bs-toggle="modal" data-bs-target="#loginModal">
+          Log In
+        </button>
+        <div class="modal" id="loginModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Log in</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                  <div id="emailHelp" class="form-text " data-bs-toggle="modal" data-bs-target="#signupModal">
+                    <a href="#"> Already have an account ?</a>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">
+                  Log In
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <div id="emailHelp" class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img4.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-flex justify-content-center text-center">
+                <h1>Long Term Investment</h1>
+              </div>  
+          </div>
+          <div class="information">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h2 class="display-6 fw-bold lh-1">What Are Long-Term Investments? </h2>
+                <p class="lead my-4">A long-term investment is an account on the asset side of a company's balance sheet that represents the company's investments, including stocks, bonds, real estate, and cash. Long-term investments are assets that a company intends to hold for more than a year.
+<br>
+
+                  The long-term investment account differs largely from the short-term investment account in that short-term investments will most likely be sold, whereas the long-term investments will not be sold for years and, in some cases, may never be sold.
+                  <br>
+                  
+                  Being a long-term investor means that you are willing to accept a certain amount of risk in pursuit of potentially higher rewards and that you can afford to be patient for a longer period of time. It also suggests that you have enough capital available to afford to tie up a set amount for a long period of time.</p>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded" src="images/short.jpg" alt="" width="460" height="460">
+            </div>
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                <img class="rounded" src="images/long.jpg" alt="" width="460" height="460">
+            </div>
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                
+                <h2 class="display-6 fw-bold lh-1">Long-Term Investments Explained </h2>
+                <p class="lead my-4">A common form of long-term investing occurs when company A invests largely in company B and gains significant influence over company B without having a majority of the voting shares. In this case, the purchase price would be shown as a long-term investment.
+<br>
+                  When a holding company or other firm purchases bonds or shares of common stock as investments, the decision about whether to classify it as short-term or long-term has some fairly important implications for the way those assets are valued on the balance sheet. Short-term investments are marked to market, and any declines in value are recognized as a loss.
+                  <br>
+                  However, increases in value are not recognized until the item is sold. Therefore, the balance sheet classification of investment – whether it is long-term or short-term – has a direct impact on the net income that is reported on the income statement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="onemore my-5">
+            <h1 class="abc d-flex justify-content-center">Top 3 long-term investments in July 2021</h1>
+            <div class="container marketing">
+              <div class="row my-5">
+                <div class="col-lg-4">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/growth.jpg"> 
+                  <h2>1. Growth stocks</h2>
+                  <p> In the world of stock investing, growth stocks are the Ferraris. They promise high growth and along with it, high investment returns. Growth stocks are often tech companies, but they don’t have to be. They generally plow all their profits back into the business, so they rarely pay out a dividend, at least not until their growth slows.
+<br>
+                    Growth stocks can be risky because often investors will pay a lot for the stock relative to the company’s earnings. So when a bear market or a recession arrives, these stocks can lose a lot of value very quickly. It’s like their sudden popularity disappears in an instant. However, growth stocks have been some of the best performers over time.
+                    <br>
+                    If you’re going to buy individual growth stocks, you’ll want to analyze the company carefully, and that can take a lot of time. And because of the volatility in growth stocks, you’ll want to have a high risk tolerance or commit to holding the stocks for at least three to five years.
+                    <br>
+                    Risk/reward: Growth stocks are among the riskier segments of the market because investors are willing to pay a lot for them. So when tough times arrive, these stocks can plummet. That said, the world’s biggest companies – the Facebooks, the Alphabets, the Amazons – have been high-growth companies, so the reward is potentially limitless if you can find the right company.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/lunn.jpg"> 
+          
+                  <h2>2. Stock funds</h2>
+                  <p>If you’re not quite up for spending the time and effort analyzing individual stocks, then a stock fund – either an ETF or a mutual fund – can be a great option. If you buy a broadly diversified fund – such as an S&P 500 index fund or a Nasdaq-100 index fund – you’re going to get many high-growth stocks as well as many others. But you’ll have a diversified and safer set of companies than if you own just a few individual stocks.
+<br>
+                    A stock fund is an excellent choice for an investor who wants to be more aggressive but doesn’t have the time or desire to make investing a full-time hobby. And by buying a stock fund, you’ll get the weighted average return of all the companies in the fund, so the fund will generally be less volatile than if you had held just a few stocks.
+                    <br>
+                    If you buy a fund that’s not broadly diversified – for example, a fund based on one industry – be aware that your fund will be less diversified than one based on a broad index such as the S&P 500. So if you purchased a fund based on the automotive industry, it may have a lot of exposure to oil prices. If oil prices rise, then it’s likely that many of the stocks in the fund could take a hit.
+                    <br>
+                    Risk/reward: A stock fund is less risky than buying individual positions and less work, too. But it can still move quite a bit in any given year, perhaps losing as much as 30 percent or even gaining 30 percent in some of its more extreme years.
+                    <br>
+                   </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/bund.jpg"> 
+          
+                  <h2>3. Bond funds</h2>
+                  <p>
+                    A bond fund – either as a mutual fund or ETF – contains many bonds from a variety of issuers. Bond funds are typically categorized by the type of bond in the fund – the bond’s duration, its riskiness, the issuer (corporate, municipality or federal government) and other factors. So if you’re looking for a bond fund, there’s a variety of fund choices to meet your needs.
+                    <br>
+                    When a company or government issues a bond, it agrees to pay the bond’s owner a set amount of interest annually. At the end of the bond’s term, the issuer repays the principal amount of the bond, and the bond is redeemed.
+                    <br>
+                    A bond can be one of the safer investments, and bonds become even safer as part of a fund. Because a fund might own hundreds of bond types, across many different issuers, it diversifies its holdings and lessens the impact on the portfolio of any one bond defaulting.
+                    <br>
+                    Risk/reward: While bonds can fluctuate, a bond fund will remain relatively stable, though it may move in response to movements in the prevailing interest rate. Bonds are considered safe, relative to stocks, but not all issuers are the same. Government issuers, especially the federal government, are considered quite safe, while the riskiness of corporate issuers can range from slightly less to much more risky.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer _ngcontent-serverapp-c52="" class="kontainer-fluid bg-dark my-0 py-3 text-light"><p _ngcontent-serverapp-c52="" class="mb-0 text-left">Funds Master Copyright © 2021-2022</p><p>Mail us at : &nbsp;<a class="email mb-0 text-right" href="mailto:fundsmaster@gmail.com">fundsmaster@gmail.com</a></p>
+    </footer>
+    </body>
+</html>

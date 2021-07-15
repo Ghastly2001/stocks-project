@@ -76,7 +76,13 @@ footer{
     position: absolute;
 }
 .carousel-caption h1{
-    color: cornsilk;
+    color: white;
     text-decoration: underline;
-    text-overflow: ellipsis;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 12px;
+    position: initial;
+}
+.information{
+    margin-top: 50vh;
+    background-color:#e5faf5 ;
 }
